@@ -1,0 +1,563 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import config
+@import 'blocks/**/*'
+@import '../../../node_modules/slick-carousel/slick/slick.scss'
+
+.footer
+    padding: 64px 224px 64px 140px
+    &_inner
+        display: flex
+        justify-content: space-between
+    &_adress-title
+        color:#838383
+        line-height: 16px
+        margin-bottom: 16px
+        font-size: 16px
+    &_adress-text
+        max-width: 348px
+        color: #FFFFFF
+        line-height: 28.8px
+    &_number-text
+        color:#FFFFFF
+    &_number-title
+        color: #838383
+        font-size: 16px
+    &_info-btn
+        background-color: #0F0F0F
+        border: 1px solid 
+        border-color: #454545
+        color: #FFFFFF
+        padding: 26px 33px
+        border-radius: 64px
+        width: 209px
+        font-weight: 500
+        min-width:209px
+        font-size: 12px
+        transition: background-color .25s ease
+        &:hover
+            color:#FFFFFF
+            background-color: darken($accent,30 )
+
+       
+    &_social-title
+        color: #838383
+        margin-bottom: 20px
+        font-size: 16px
+    &_social-list
+        display: flex
+        list-style-type: none
+        padding: 0
+        margin: 0
+       
+    &_social-item--WhatsApp
+        background-color:#151515
+        border-radius: 8px
+        border: none
+        width: 48px
+        height: 48px
+        transition: background-color .25s ease
+        &:hover
+            color:#FFFFFF
+            background-color: darken($accent,40 )
+        
+       
+    &_social-item--telegram
+        background-color:#151515
+        border-radius: 8px
+        border: none
+        width: 48px
+        height: 48px
+        margin-left: 16px
+        transition: background-color .25s ease
+        &:hover
+            color:#FFFFFF
+            background-color: darken($accent,40 )
+    &_social-item--vk
+        background-color:#151515
+        border-radius: 8px
+        border: none
+        width: 48px
+        height: 48px
+        margin-left: 16px
+        transition: background-color .25s ease
+        &:hover
+            color:#FFFFFF
+            background-color: darken($accent,40 )
+.main
+     background-color: #0F0F0F
+     align-content: center
+     padding:0px 76px 
+     
+
+.header
+    position: relative
+    
+    max-width: 1440px
+    padding-bottom: 64px
+    padding-top: 64px
+    
+    
+    &_home
+        position: relative
+        background-image: url(../images/dist/home.jpg)
+        width: 1288px
+        height: 641.07px
+        margin: 0
+        
+        
+    &_home-content
+        padding-top: 300px
+        padding-left: 64px
+    &_home-title
+        position: relative
+        color: #FFFFFF
+        width: 600px
+        justify-content: center
+        font-size: 48px
+        line-height: 57.6px
+        padding-bottom: 32px
+    
+        
+        
+        
+    &_home-btn
+        position: relative
+        width: 209px
+        min-width: 209px
+        border-radius: 64px
+        background-color: #FF9900
+        border: none
+        color: #FFFFFF
+        padding: 26px 50px
+        font-size: 12px
+        transition: background-color .25s ease
+        &:hover
+            color:#FFFFFF
+            background-color: darken(#FF9900,8 )
+    
+    &_decor-items
+        display: flex
+        justify-content: space-between
+        
+        
+    &_decor-basa--text
+        width: 141px
+        color: #D6D6D6
+        text-align: center
+    &_decor-garantia--text
+        width: 131px
+        color: #D6D6D6
+        text-align: center
+    &_decor-oplata--text
+        width: 142px
+        color: #D6D6D6
+        text-align: center
+    &_decor-basa--img
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &_decor-garantia--img
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &_decor-oplata--img
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &_decor-items
+        padding-top: 60px
+    &_decor
+        padding: 0 200px
+
+.content
+    //padding: 64px
+    &_company
+        background-color: #181818
+        padding: 64px
+        margin: 64px 0
+    &_copmany-title
+        color: #FFFFFF
+        font-size: 36px
+        margin-bottom: 32px
+    &_copmany-text
+        color: #838383
+        font-size: 16px
+        width: 497px
+        min-width: 497px
+    
+
+    &_galley-items
+       
+       display: flex
+       justify-content: space-between
+    &_galley-item1
+        position: relative
+        margin: 0 40px
+        
+    &_galley-item1--text1 
+        position: absolute
+        color:#FFFFFF
+        margin: 62px 36px
+        width: 288px
+        padding: 0 36px
+        text-align: center
+    
+    &_galley-item2
+        position: relative
+        margin: 0 40px
+        
+    &_galley-item2--text2 
+        position: absolute
+        color:#FFFFFF
+        margin: 62px 36px
+        padding: 0px 36px
+        width: 332px
+        text-align: center
+    
+    &_galley-item3
+        position: relative
+        margin: 0 40px
+        
+    &_galley-item3--text3 
+        position: absolute
+        color:#FFFFFF
+        margin: 62px 36px
+        padding: 0px 36px
+        width: 304px
+        text-align: center
+
+
+    &_info
+       display: flex
+       justify-content: space-between
+       position: relative
+       background-color: #181818
+       margin-bottom: 58px
+       border-radius: 16px
+
+    &_info-home--imgHome
+        position: absolute
+        margin-top: 52px
+
+    &_info-home--imgLines
+        margin-left: 226px
+        margin-top: 30px
+        
+       
+    &_info-stages
+        padding-bottom:40px
+        padding-top: 40px
+        padding-right: 158px
+        
+
+
+
+    &_info-stages--yteplenie---title
+        color: #FFFFFF
+        font-size: 24px
+        margin-bottom: 16px
+        padding-left: 56px
+    &_info-stages--yteplenie---text
+        color: #B3B3B3
+        font-size: 16px
+        width: 407px
+        margin-bottom: 25px
+        line-height: 22.4px
+        padding-left: 56px
+    
+    &_info-stages--stena---title
+        color: #FFFFFF
+        font-size: 24px
+        margin-bottom: 16px
+        padding-left: 56px
+    &_info-stages--stena---text
+        color: #B3B3B3
+        font-size: 16px
+        width: 407px
+        margin-bottom: 25px
+        line-height: 22.4px
+        padding-left: 56px
+    &_info-stages--inputOtdelka--title
+        color: #FFFFFF
+        font-size: 24px
+        margin-bottom: 16px
+        padding-left: 56px
+    &_info-stages--inputOtdelka---text
+        color: #B3B3B3
+        font-size: 16px
+        width: 407px
+        margin-bottom: 25px
+        line-height: 22.4px
+        padding-left: 56px
+    &_info-stages--outputOtdelka---title
+        color: #FFFFFF
+        font-size: 24px
+        margin-bottom: 16px
+        padding-left: 56px
+    &_info-stages--outputOtdelka---text
+        color: #B3B3B3
+        font-size: 16px
+        width: 407px
+        margin-bottom: 25px
+        line-height: 22.4px
+        padding-left: 56px
+    &_info-stages--fundament---title
+        color: #FFFFFF
+        font-size: 24px
+        padding-left: 56px
+        
+    &_info-stages--fundament---text
+        color: #B3B3B3
+        font-size: 16px
+        width: 407px
+        line-height: 22.4px
+        padding-left: 56px
+
+    &_info-stages--yteplenie
+        position: relative
+    
+    &_info-stages--yteplenie::before
+        position: absolute
+        content: ''
+        background-image: url(../images/dist/icon.svg)
+        width: 32px
+        height: 32px
+
+    &_info-stages--stena
+        position: relative
+    
+    &_info-stages--stena::before
+        position: absolute
+        content: ''
+        background-image: url(../images/dist/icon.svg)
+        width: 32px
+        height: 32px
+
+    &_info-stages--inputOtdelka
+        position: relative
+    
+    &_info-stages--inputOtdelka::before
+        position: absolute
+        content: ''
+        background-image: url(../images/dist/icon.svg)
+        width: 32px
+        height: 32px
+        
+    &_info-stages--outputOtdelka
+        position: relative
+    
+    &_info-stages--outputOtdelka::before
+        position: absolute
+        content: ''
+        background-image: url(../images/dist/icon.svg)
+        width: 32px
+        height: 32px
+
+    &_info-stages--fundament
+        position: relative
+    
+    &_info-stages--fundament::before
+        position: absolute
+        content: ''
+        background-image: url(../images/dist/icon.svg)
+        width: 32px
+        height: 32px
+
+    &_form
+        display: flex
+        justify-content: space-between
+        background-color: #151515
+        border-radius: 16px
+        position: relative
+        padding-left: 64px
+        padding-right: 64px
+        margin-bottom: 128px
+    &_form-info--title
+        color: #FFFFFF
+        font-size: 36px
+        line-height: 46.8px
+        width: 534px
+        font-weight: 400
+        padding-bottom: 24px
+    &_form-info--text
+        color: #B2B2B2
+        font-size: 16px
+        line-height: 22.4px
+        width: 410px
+        font-weight:400px
+        padding-bottom: 24px
+    &_form-info--number
+        background-color: #222222
+        color: #6B6B6B
+        min-width: 360px
+        border-radius: 64px
+        padding-top: 26px
+        padding-bottom: 26px
+        padding-left: 50px
+        margin-bottom: 24px
+    &_form-info--connection
+        display: flex
+        padding-bottom: 24px
+       
+    &_form-info--connection---btn
+        background-color: #FF9900 
+        color: #FFFFFF
+        padding: 26px 50px
+        border-radius: 64px
+        margin-right: 24px
+        transition: background-color .25s ease
+        &:hover
+            color:#FFFFFF
+            background-color: darken(#FF9900,8 )
+    
+    &_form-info--connection---text1
+        color: #4E4E4E
+        font-size: 12px
+        font-weight: 400
+        margin-bottom: 34px
+        margin-top: 34px
+        margin-right: 24px
+        
+   
+       
+    &_form-info--connection---class
+        position: relative
+        margin-bottom: 34px
+        margin-top: 34px
+        &::before
+            position: absolute
+            content: ''
+            background-image: url('../images/dist/whatsappForma2.png')
+            width: 19.2px
+            height: 19.2px
+    
+    &_form-info--connection---text2
+        color:#FFFFFF
+        font-size: 12px
+        font-weight: 500
+        padding-left: 30px
+        transition: color .25s ease
+        &:hover
+            
+            color:#FF9900
+
+    &_form-info--close
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('../images/dist/close.svg')
+            width: 19.64px
+            height: 24px
+
+    &_form-info--politica
+        padding-left: 46px
+           
+    &_form-info
+        padding-bottom: 64px
+        padding-top: 64px
+    &_form-telefon
+        padding-top: 47px
+
+
+.top
+    margin-bottom: 128px
+   
+    &_slider
+        margin-left: 70px
+    &_slider-item
+        
+        background-color: #151515
+        border-radius: 16px
+       
+        padding-left: 32px
+        padding-right: 32px
+        padding-bottom: 32px
+        padding-top: 17px
+        max-width: 560px
+    &_slider-img
+        margin-bottom: 24px
+    &_slider-title
+        color: #FFFFFF
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 12px
+    &_slider-text
+        width: 334px
+        color: #B2B2B2
+        font-weight: 400
+        font-size: 16px
+        margin-bottom: 24px
+    &_slider-infoText
+        display: flex
+        margin-right: 24px
+    &_slider-stolbez
+        display: flex
+    &_slider-NameText
+        color: #838383
+        font-size: 16px
+        font-weight: 400
+    &_slider-infoText1
+        color: #FFFFFF
+        font-size: 16px
+        font-weight: 500
+    &_slider-icons
+        display: flex
+    &_slider-icons-img
+        width: 24px
+        height: 22.59px
+        margin-right: 13px
+        
+    &_slider-icons-text
+        margin-right: 24px
+        font-size: 12px
+        font-weight: 400
+        color:#838383
+    &_slider-icons
+        margin-top: 22px
+    &_slider-btn
+        background-color: #FF9900
+        color: #FFFFFF
+        border-radius: 64px
+        border: none
+        width: 176px
+        height: 56px
+        transition: background-color .25s ease
+        &:hover
+            color:#FFFFFF
+            background-color: darken(#FF9900,8 )
+    
+
+
+
+
+
+
+
+   
+         
+
+
+
+
+
+
+
+
+   
+    
+       
+
+            
+            
+
+        
+        
+
+
+        
+
+
+
